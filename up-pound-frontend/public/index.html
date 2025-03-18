@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Up-Pound: Pet Adoption Platform</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Optional: Include a Google Font like Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Top header banner -->
+  <header class="header">
+    <div class="header-content">
+      <div class="logo-container">
+        <div class="logo">i</div>
+        <p class="site-title">Up-Pound: Pet Adoption Platform powered by Upbound Crossplane</p>
+      </div>
+      <button class="close-button">×</button>
+    </div>
+  </header>
+
+  <!-- Navigation bar -->
+  <nav class="nav">
+    <div class="nav-content">
+      <div class="nav-brand">
+        <div class="nav-logo">UP</div>
+        <h1 class="nav-title">Up-Pound<span class="demo-badge">Demo</span></h1>
+      </div>
+      <div class="nav-links">
+        <a href="#" class="nav-link">Find Pets</a>
+        <a href="#" class="nav-link">About Demo</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main content -->
+  <main class="container">
+    <!-- Page heading with demo indicator -->
+    <h1 class="page-title">Find Your Perfect Pet</h1>
+    
+    <div class="demo-banner">
+      <div class="demo-icon">i</div>
+      <span class="demo-banner-text">Upbound Demo</span>
+    </div>
+
+    <!-- Search Section -->
+    <section class="search-section">
+      <h2 class="search-title">Search Pets</h2>
+      <form class="search-form">
+        <input type="text" class="search-input" placeholder="Search for dogs, cats, and more...">
+        <button type="submit" class="search-button">Search</button>
+      </form>
+      <div class="filter-pills">
+        <div class="filter-pill dogs">Dogs</div>
+        <div class="filter-pill cats">Cats</div>
+        <div class="filter-pill small">Small Pets</div>
+        <div class="filter-pill near">Near Me</div>
+      </div>
+    </section>
+
+    <!-- Upbound Info Section -->
+    <section class="info-section">
+      <h2 class="info-title">Powered by Upbound Crossplane</h2>
+      <p class="info-text">
+        This demo showcases how pet adoption platforms can be deployed as microservices on Kubernetes using Upbound Crossplane to manage cloud resources.
+      </p>
+      <button class="info-button">View Architecture</button>
+    </section>
+
+    <!-- Pets Listing -->
+    <section>
+      <h2 class="pets-title">Available Pets</h2>
+      <div class="pets-grid">
+        <!-- Pet Card 1 -->
+        <div class="pet-card">
+          <div class="pet-image">
+            <span>Pet Image Placeholder</span>
+            <div class="pet-status available-teal">Available</div>
+          </div>
+          <div class="pet-info">
+            <h3 class="pet-name">Luna</h3>
+            <p class="pet-breed">Border Collie • 2 years</p>
+            <span class="pet-badge">Demo Pet</span>
+            <a href="#" class="view-profile">View Profile</a>
+          </div>
+        </div>
+
+        <!-- Pet Card 2 -->
+        <div class="pet-card">
+          <div class="pet-image">
+            <span>Pet Image Placeholder</span>
+            <div class="pet-status available-yellow">Available</div>
+          </div>
+          <div class="pet-info">
+            <h3 class="pet-name">Max</h3>
+            <p class="pet-breed">Tabby Cat • 4 years</p>
+            <span class="pet-badge">Demo Pet</span>
+            <a href="#" class="view-profile">View Profile</a>
+          </div>
+        </div>
+
+        <!-- Pet Card 3 -->
+        <div class="pet-card">
+          <div class="pet-image">
+            <span>Pet Image Placeholder</span>
+            <div class="pet-status available-teal">Available</div>
+          </div>
+          <div class="pet-info">
+            <h3 class="pet-name">Daisy</h3>
+            <p class="pet-breed">Golden Retriever • 1 year</p>
+            <span class="pet-badge">Demo Pet</span>
+            <a href="#" class="view-profile">View Profile</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">UP</div>
+          <span>Powered by Upbound Crossplane</span>
+        </div>
+        <div class="footer-links">
+          <a href="#" class="footer-link">View Demo Source</a>
+          <a href="#" class="footer-link">Upbound Documentation</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        This is a demo application. No real pets or shelters are represented.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
