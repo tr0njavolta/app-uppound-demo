@@ -1,0 +1,29 @@
+services:
+  database:
+    image: postgres:14
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: uppound
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./init-scripts:/docker-entrypoint-initdb.d
+
+  backend:
+    build: ./up-pound-backend
+    environment:
+      DATABASE_URL: postgres://postgres:postgres@database:5432/uppound
+    ports:
+      - "3002:3001"
+    depends_on:
+      - database
+    volumes:
+      - ./up-pound-backend/uploads:/app/uploads
+
+  frontend:
+    build: ./up-pound-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
